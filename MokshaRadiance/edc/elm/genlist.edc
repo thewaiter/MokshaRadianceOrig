@@ -244,6 +244,26 @@ group { name: "elm/genlist/item_compress/group_index/default"; nomouse;
    }
 }
 
+group { "genlist_noarrow"; inherit_only: 1; program_source: "elm";
+   parts { 
+      rect { "arrow"; mouse;
+         desc { "default";
+            fixed: 1 0;
+            min: 15 15;
+            aspect: 1.0 1.0;
+            align: 0.0 0.5;
+            rel1.to_x: "elm.swallow.pad";
+            rel1.relative: 1.0 0.0;
+            rel1.offset: -2 2;
+            rel2.to_x: "elm.swallow.pad";
+            rel2.relative: 1.0 1.0;
+            rel2.offset: -2 -3;
+            color: 0 0 0 0;
+         }
+      }
+   }
+}
+
 group { name: "elm/genlist/item/default/default";
    data.item: "selectraise" "on";
    data.item: "texts" "elm.text";
@@ -832,12 +852,12 @@ group { "elm/genlist/item/indent/default"; nomouse;
          }
       }
    }
+    inherit: "genlist_noarrow";
 }
 
 ODD("elm/genlist/item_odd/indent/default", "elm/genlist/item/indent/default")
 COMPRESS("elm/genlist/item_compress/indent/default", "elm/genlist/item/indent/default")
 COMPRESS_ODD("elm/genlist/item_compress_odd/indent/default", "elm/genlist/item/indent/default")
-
 
 group { name: "elm/genlist/item/one_icon/default"; nomouse;
    data.item: "selectraise" "on";
