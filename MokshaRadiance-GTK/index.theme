@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=oomox-Radiance-Darker
+Name=MokshaRadiance
 Comment=A flat theme with transparent elements
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Arc-Darker
-MetacityTheme=Arc-Darker
+GtkTheme=MokshaRadiance
+MetacityTheme=MokshaRadiance
 IconTheme=gnome
 CursorTheme=DMZ-Black
 ButtonLayout=menu:minimize,maximize,close
